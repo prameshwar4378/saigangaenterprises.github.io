@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reversible Plough</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		color: white;
+
+	}
+	body{
+		background-color: black;
+	}
+	#wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding-top: 50px;
+		align-items: center;
+
+	}
+
+		.product, .info{
+		border-radius: 8px;
+		width: 40%;
+		height: 500px;
+		background-color: #71057F;
+		align-items: center;
+		text-align: center;
+
+	}
+	
+	.product, .info{
+		border-radius: 8px;
+		width: 40%;
+		height: 500px;
+		background-color: #71057F;
+		align-items: center;
+		text-align: center;
+		box-shadow: 0px 0px 9px;
+		margin-bottom: 20px;
+
+	}
+
+
+	@media screen and (max-width: 770px){
+		#wrapper{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding-top: 50px;
+		align-items: center;
+
+	}
+		.product, .info{
+		border-radius: 8px;
+		width: 90%;
+		height: 500px;
+		background-color: #71057F;
+		align-items: center;
+		text-align: center;
+
+	}
+	
+	.product, .info{
+		border-radius: 8px;
+		width: 90%;
+		height: 500px;
+		background-color: #71057F;
+		align-items: center;
+		text-align: center;
+		box-shadow: 0px 0px 9px;
+		margin-bottom: 20px;
+
+	}
+}
+	img{
+		height: 250px;
+		width: 50%;
+		margin-top: 20px;
+		border-radius: 8px;
+	}
+	
+	h2{
+		
+		color: #26FA0B;
+	}
+	fieldset{
+		width: 90%;
+		height: 90%;
+		margin-top: 20px;
+		margin-left: 25px;
+		align-items: center;
+		text-align: center;
+
+	}
+	legend{
+		padding:  10px 10px;
+		margin: 10px 10px;
+	}
+	.customer{
+		
+		width: 70%;
+		text-align: left;
+
+	}
+	input, select
+	{
+		width: 100%;
+		height: 25px;
+		background-color: transparent;
+		outline: none;
+		border-radius: 5px;
+	}
+	input:focus{
+		box-shadow: 0px 0px 9px white;
+		text-shadow:  0px 0px 9px white;
+
+	}
+	.button{
+		height: 40px;
+		 background-color: red; /* For browsers that do not support gradients */
+  		background-image: linear-gradient(90deg, red, yellow);
+		cursor: pointer;
+		transform: 0.5s;
+		font-size: 25px;
+
+
+	}
+	.button:hover{
+
+		 background-color: red; /* For browsers that do not support gradients */
+  		background-image: linear-gradient(90deg, yellow, red);
+  				cursor: pointer;
+	}
+	option{
+		color: black;
+		text-align: center;
+	}
+</style>
+<body><form method="post" autocomplete="off" name="google-sheet">
+	<section id="wrapper">
+		<div class="product">
+			<img src="plough.jpg" name="Product" value="Tractor 200-DI 20HP">
+			<br><br><br><br><br>
+				<i>Product Name </i><br><br>
+				<h2>Reversible Plough</h2>
+			
+			</div>
+
+			
+		</div>
+		<div class="info">
+			<fieldset>
+				<legend>
+					Order Form
+				</legend>
+				<center><div class="customer">
+					Name<br>
+					<input type="text" name="Name" required="required"><br><br>
+
+					
+					Mobile<br>
+					<input type="number" name="Mobile" required="required"><br><br>
+
+
+					Address<br>
+					<input type="text" name="Address" required="required"><br><br>
+
+
+					Product<br>
+					<select style="text-align: center;" name="Product" value="Tractor 200-DI 20HP" required="required">
+						<option>---Select---</option>
+						<option value="Reversible Plough">Reversible Plough</option>
+						</select><br><br>
+
+
+					Type<br>
+					<select style="text-align: center;" name="Type" required="required">
+						<option>---Select---</option>
+						<option value="Heavi Reversible Plough">Heavi Reversible Plough</option>
+						<option value="Hydrolic Reversible Plough">Hydrolic Reversible Plough</option>
+					</select><br><br>
+					<input type="checkbox" style="width: auto; width: 20px; height: 20px;" name="date" value="=TODAY()" required="required">
+					<input type="submit" name="submit" value="Submit" class="button">
+				</div></center>
+			</fieldset>
+		</div>
+	</section>
+</form>
+
+
+
+
+  <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyvrWJbQuzyg4xH-HeGY-bNzpNEt9FTREvgCpyHyBjmE8iwc7s/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("response Successfully Thank You ... "))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
