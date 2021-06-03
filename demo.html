@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+	.wrapper
+	{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		border:2px outset red; 
+	}
+	.item{
+		background-color: gray;
+		width: 24%;
+		height: 500px;
+		border: 2px solid white;
+		box-shadow: 0px 0px 5px white;
+
+	}
+	
+	@media screen and (max-width: 500px){
+.wrapper
+	{	
+		flex-direction: column;
+		width: 100%;
+		border:2px outset red; 
+		
+	}
+.item{
+		background-color: gray;
+		width: 100%;
+		height: 500px;
+		border: 2px solid white;
+		box-shadow: 0px 0px 5px white;
+		background-color: blue;
+		margin-top: 20px;
+
+	}
+	
+	}
+</style>
+<body>
+	<div class="wrapper">
+		<div class="item">
+			
+		</div><br>
+		<div class="item">
+			
+		</div><br>
+		<div class="item">
+			
+		</div><br>
+		<div class="item">
+			
+		</div>
+	</div>
+
+</body>
+</html>

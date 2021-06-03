@@ -1,0 +1,414 @@
+*{
+	padding:0;
+	margin: 0;
+	font-family: 'arya';
+}
+
+#banner{
+background: url(images/tractor1.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+
+.logo
+{
+	position: absolute;
+	top: 4%;
+	left: 10%;
+	height: 80px;
+	width: 100px;
+}
+
+.banner-text
+{
+	text-align: center;
+	color: white;
+	padding-top: 140px;
+
+}
+.banner-text h1{
+	font-size: 60px;
+	font-family: Caveat;
+
+}
+.banner-text p{
+	font-size: 30px;
+	font-style: italic;
+	font-family: 'Caveat', cursive;
+}
+.banner-text p1{
+	padding-left: 110px;
+	font-size: 20px;
+	font-style: italic;
+	}
+.banner-btn{
+	float: left;
+	margin: 20px 20px 20px 20px;
+	padding-left: 50px;
+	padding-top: 80PX;
+	margin: 70px auto 0;
+}
+
+.banner-btn{
+	margin: 70px auto 0;
+
+}
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+	margin-top: 10px;
+}
+.banner-btn a span{
+width: 0%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: linear-gradient(to right, red , yellow);
+z-index: -1;
+transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%
+}
+.banner-btn a:hover{
+	color:#000;
+}
+
+@media screen and (max-width: 770px){
+	.banner-text h1{
+		font-size: 44px;
+		}
+		.banner-btn a{
+			display: block;
+			margin: 7px auto;
+
+
+		}
+		.banner-btn{
+			margin: -5px auto 0;
+			
+		}
+		.banner-text h1{
+			font-size: 25px;
+			font-family: Caveat;
+		
+		}
+}
+
+#feature
+{
+	width: 100%;
+	padding: 70px 0;
+}
+.title-text{
+	text-align: center;
+	padding-bottom: 70px;
+
+}
+.title-text p{
+	font-family: laila;
+	margin: auto;
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+	position: relative;
+	
+	display: inline-block;
+}
+.title-text h1{ 
+	font-size: 40px;
+}
+.feature-box{
+	margin: auto;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+
+}
+.features{
+	flex-basis: 50%;
+}
+.features-img{
+	flex-basis: 50%;
+	margin: auto;
+}
+.features-img img{
+	width: 70%;
+	border-radius: 10px;
+}
+.features h1{
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: red;
+}
+.features-desc{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.feature-icon .fa{
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	border-radius: 8px;
+	color: red;
+	border: 1px solid red;
+
+}
+.feature-text p{
+	padding: 0 20px;
+	text-align: initial;
+}
+
+
+@media screen and (max-width: 770px){
+	.title-text h1{ 
+	font-size: 30px;
+}
+.features{
+	flex-basis: 100%;
+}
+.features-img{
+	flex-basis: 100%;
+	
+}
+.features-img img{
+	width: 100%;
+}
+}
+
+/*footer*/
+
+
+
+
+
+/*footer*/
+	.wrapper{
+		width: 100%; 
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: space-around;
+
+	}
+	@media screen and (max-width: 770px){
+		.wrapper{
+			flex-direction: column;
+			align-items: center;
+			width: 70%;
+			justify-content: space-around;
+			
+		}
+	}
+	.section-header{
+			text-align: center;
+			margin-bottom: 33px;
+			}
+	.section-header h1{
+		text-transform: uppercase;
+		margin: 0;
+		color: red;
+		font-size: 45px;
+		letter-spacing: 5px;
+	}
+	.Team-member{
+		margin-left: 250px;
+		width: 25%;
+		align-content: center;
+		height: auto;
+		box-shadow: 5px 5px 15px gray;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		padding: 15px;
+		text-align: center;
+		margin: 0 5px;
+		background-clip: #ff1546;
+		/*background-color: gray;*/
+	}
+	/*.Team-member img{
+		width: 100%;
+	}*/
+	.Team-member h3{
+		margin: 0;
+		text-transform: uppercase;
+		font-size: 25px; 
+		color: gray;
+
+	}
+	.Team-member p{
+		color: red;
+
+	}
+	.Team-member:before{
+		position: absolute;
+		content: '';
+		left: 0;
+		bottom: 0;
+		height: 4px;
+		width: 100%;
+		border-bottom: 4px solid transparent;
+		border-left: 4px solid transparent;
+		box-sizing: border-box;
+		transition: translateX(100%);
+
+	}
+	.Team-member img{
+		width: 200px;
+		height: 200px;
+	}
+	.Team-member:after{
+		position: absolute;
+		content: '';
+		right: 0;
+		top: 0;
+		height: 4px;
+		width: 100%;
+
+		border-top: 4px solid transparent;
+		border-right: 4px solid transparent;
+		box-sizing: border-box;
+		transition: translateX(-100%);
+
+	}
+	.Team-member:hover:before{
+		border-color:red;
+		height: 100%;
+		transform: translateX(0);
+		transition: .3s transform linear, .3s height linear .3s;
+	}
+	.Team-member:hover:after{
+		border-color:orange;
+		height: 100%;
+		transform: translateX(0);
+		transition: .3s transform linear, .3s height linear .5s;
+	}
+i{
+	padding: 5px 2px 5px;
+}
+
+@media screen and (max-width: 770px){
+		.Team-member{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		width: 90%;
+		height: auto;
+		float: left;
+		box-shadow: 5px 5px 15px gray;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		padding: 15px;
+		text-align: center;
+		margin-bottom: 20px;
+		background-clip: #ff1546;
+		/*background-color: gray;*/
+	}
+	}
+
+/*footer*/
+
+
+#fieldset-main{
+	margin-top: 20px;
+	padding-left: 2%;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	width: 95%;
+	margin: 1% 1% 2% 2%;
+	height: 200px;
+	text-align: center;
+}
+legend{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 25px;
+	color: red;
+	border: 2px solid red;
+	border-radius: 10px;
+	background-color: white;
+	margin-bottom: -10px;
+	
+}
+.office{
+	text-align: center;
+	background-color: gray;
+	float: left;
+	width: 45%;
+	height: 90%;
+	margin:  1% 1% 1% 1%; 
+}
+.showroom{
+
+	margin:  1% 1% 1% 1%; 
+	text-align: center;
+	background-color: gray;
+	width: 45%;
+	height: 90%;
+}
+#fieldset-main p{
+	color: white;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+#rpgraphics{
+	width: 100%;
+	height: 40px;
+	background-color: white;
+}
+.copyright{
+	font-size:12px;
+}
+@media screen and (max-width: 770px){
+
+#fieldset-main p{
+	color: white;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	font-size: 11px;
+
+}
+.office{
+	text-align: center;
+	background-color: gray;
+	float: left;
+	width: 45%;
+	height: 70%;
+	margin:  1% 1% 1% 1%; 
+}
+.showroom{
+ 
+	margin:  1% 1% 1% 1%; 
+	text-align: center;
+	background-color: gray;
+	width: 45%;
+	height: 70%;
+}
+}

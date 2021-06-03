@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Enquiry</title>
+	<link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+ <!--  <form> -->
+  <form method="post" autocomplete="off" name="google-sheet">
+<div class="wrapper" style="">
+ <div class="head"> <p><marquee behavior="alternate" > Saiganga Enterprises,Vaijapur.</marquee></i></p></div>
+    <div class="title"  style="font-family: 'Patrick Hand', cursive;">
+      Enquiry Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" name="FName" required>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" name="LName" required>
+       </div>
+       <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" name="Address" required></textarea>
+       </div>
+       
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input" name="Email">
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label><input type="text" name="" value="+91" class="input" style="width: 12%; margin-right: 1%">
+          <input type="text" class="input" style="width: 87%; " name="Phone" required>
+       </div> 
+      <div class="inputfield">
+          <label>Message</label>
+          <textarea class="textarea" name="Message"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Postal Code</label>
+          <input type="text" name="Postal" class="input">
+       </div> 
+         <div class="inputfield">
+          <label>Product</label>
+          <div class="custom_select"  >
+            <select name="Product" required >
+              <option value="">---Select---</option>
+              <option value="Captain 200">Captain 200</option>
+              <option value="Captain 250">Captain 250</option>
+              <option value="Captain 280">Captain 280</option>
+            </select>
+          </div>
+       </div>
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" name="date" value="=today()" required>
+            <span class="checkmark"></span>
+          </label>
+          <p>Confirm</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn" onclick="message();">
+      </div>
+    </div>
+</div>	
+  
+	</form>
+  <div class="wrapper" style="background-color: transparent; color: white;">
+    
+<center>
+<p style="font-size: 10px;">Design By - RP Technology         All &#169; Rights Are Reserved</p>
+<p style="font-size: 10px;"><a href="rp.html" style="color: white;"> More Info</a></p>
+  </div>
+  <SCript>
+
+  </SCript>
+  <script>
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxSbKHvMUUfrub_Q8npHnkcmGxjriu82zYYTecRPtb087ZcEvE/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit', e => {
+              alert("form submiting please wait");
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Request Successfull. Thank You ...  "))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

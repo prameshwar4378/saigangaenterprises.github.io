@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+	*{
+	margin: 0;
+	padding: 0;
+	color: #f45dd6;
+	
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 5 0 0 5;
+	
+}
+.video{
+	margin-top: 25px;
+width: 30%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 0px 7px 5px #888888;
+}
+
+@media screen and (max-width: 600px) {
+.wrapper{
+	display: flex;
+	/*height:300px;*/
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 5 0 0 5;
+	flex-basis: 90%;
+	text-align: center;
+	align-items: center;
+}
+.video{
+	
+	margin-top: 25px;
+width: 85%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 0px 7px 5px #888888;
+}
+}
+
+</style>
+<body>
+<br><br>
+<center>
+
+<div class="wrapper">		
+<video class="video" controls poster="video/tractor1.png">
+  <source src="demo.mp4" type="video/mp4"><br>
+</video>
+
+<video class="video"  controls>
+  <source src="demo.mp4" type="video/mp4" ><br>
+</video>
+<video class="video" controls>
+  <source src="demo.mp4" type="video/mp4" ><br>
+</video>
+</div>
+	
+<div class="wrapper">		
+<video  controls class="video">
+  <source src="demo.mp4" type="video/mp4"><br>
+</video>
+<video class="video"  controls>
+  <source src="demo.mp4" type="video/mp4" ><br>
+</video>
+<video class="video" controls>
+  <source src="demo.mp4" type="video/mp4" ><br>
+</video>
+</div>
+	
+<div class="wrapper">		
+<video  controls class="video">
+  <source src="demo.mp4" type="video/mp4"><br>
+</video>
+<video class="video"  controls>
+  <source src="demo.mp4" type="video/mp4" ><br>
+</video>
+<video class="video" controls>
+  <source src="demo.mp4" type="video/mp4" ><br>
+</video>
+</div>
+
+</body>
+</html>

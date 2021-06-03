@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.contact{
+		position: relative;
+		min-height: 100vh;
+		padding: 50px 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: url(images/tractor1.jpg);
+		background-size:cover; 
+	}
+	.contact .content{
+		max-width: 800px;
+		text-align: center;
+	}
+.contact .content h2{
+	font-size: 36px;
+	font-weight: 500;
+	color: white;
+}
+.contact .content p{
+	
+	font-weight: 300;
+	color: white;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px; 
+}
+.container .contactinfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactinfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .contactinfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+.container .contactinfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: white;
+		flex-direction: column;
+		font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+	font-weight: 500;
+	color: red;
+}
+.contactform{
+	width: 40%;
+	padding: 40px;
+	background: white;
+
+}
+.contactform h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+
+}
+.contactform .inputbox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+}
+.contactform .inputbox span{
+	position: absolute;
+	left: 0;	
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transform: 0.5s;
+color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+	color: red;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]
+{
+	width: 100px;
+	background: orange;
+	color:#fff;
+	border:none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 10px;
+}
+@media (max-width: 991px)
+{
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .contactform
+
+	{
+		margin-bottom: 40px; 
+	}
+	.container .contactform{
+		width: 100%;
+	}
+}
+h1{
+	font-size: 45px;
+	color: white;
+	font-family: laila;
+}
+</style>
+<body>
+
+  <form method="post" autocomplete="off" name="google-sheet">
+<section class="contact">
+	<div class="content"><h1>Contact us</h1>
+		<p>saiganga enterprises privide a many servicess that are regarding an tractor, tractor spar, online services, more ....
+		we have try to solve all problem which have a customer in affortable prices and less of time
+	    our staff is well qualified or more year of experience ...</p>
+	</div>
+	<div class="container">
+		<div class="contactinfo">
+			<div class="box">
+				<div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"> </i> </div>
+				<div class="text">
+					<h3>Address</h3>
+					<p>subhadra complext, <br> ladgaon raod <br>vaijapur 423701. </p>
+				</div>
+			</div>
+			
+
+				<div class="box">
+				<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+				<div class="text">
+					<h3>Phone</h3>
+					<p>+91-9158593660</p>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+				<div class="text">
+					<h3>Email</h3>
+					<p>yogesh.karale4@gmail.com </p>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="contactform">
+			
+				<h2>
+					Send Message
+				</h2>
+				<div class="inputbox">
+					<input type="text" name="Name" required="required">
+					<span>Full Name</span>
+				</div>
+				<div class="inputbox">
+					<input type="text" name="Phone" required="required">
+					<span>Phone</span>
+				</div>
+
+				<div class="inputbox">
+					<textarea required="required" name="Message"></textarea>
+					<span>Type Your Message...</span>
+				</div>
+
+					<div class="inputbox">
+						<input type="submit" name="" value="Send"> 
+		
+		</div>
+	</div>
+</section>
+</div>
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzzgY6YGv-KK_FnslknCUvKT9YkMRLWrRvRUOJSxy1oS9Dgbmk/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Your response Send Success ...! "))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>

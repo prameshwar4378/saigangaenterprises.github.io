@@ -1,0 +1,165 @@
+/*+{
+	margin: 0;
+	padding: 0;
+}*/
+.contener{
+	width: 100%;
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg) ;
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+.navbar{
+	width: 100%;
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+.logo
+{
+	width: 100px;
+	cursor: pointer;
+}
+.menu-icon{
+	width: 30px;
+	cursor:pointer;
+	margin-left: 40px;
+}
+nav{
+	flex:1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+}
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+
+}
+.col{
+	flex-basis: 50%;
+
+}
+h1{
+	font-size: 50px;
+	color: white;
+}
+.p{
+	color: white;
+	line-height: 15px;
+	justify-content: center;
+
+}
+button{
+	width: 180px;
+	color:green;
+	font-size: 12px;
+	padding: 12px 0;
+	background: white;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+	cursor: pointer;
+	font-family: laila;
+}
+button:hover{
+	background: transparent;
+	color: white;
+	border: 2px dotted white;
+}
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px  25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+a{
+	color: black;
+}
+a:hover{
+	color: white;
+}
+.card1{
+
+	background-image: url(images/height.jpg);
+}
+.card2{
+
+	background-image: url(images/night.jpg);
+}
+.card3{
+
+	background-image: url(images/sunset.jpg);
+}
+.card4{
+
+	background-image: url(images/tractor4.jpg);
+}
+
+.card:hover{
+transform: translateY(-10px);
+}
+h5{
+	color: #fff;
+	text-shadow: 1px 2px 3px black;
+}
+.card p{
+	text-shadow: 0 0 15px #000;
+	font-size: 8px;
+	line-height: 0px;
+}
+.foot{
+	height: 120px;
+	width: 100%;
+	background: gray;
+}
+.pdf{
+	height: 200px;
+	width: 100%;
+	background: gray;
+	font-family: laila;
+	padding-top: 20px;
+	color: white;
+}
+a p{
+	color: yellow;
+	font-family: arya;
+}
+.Cotation{
+	border: 2px solid white;
+	width: 80%;
+	margin-left: 50px;
+	padding-left: 10%;
+}
+input,select {
+	border-radius: 7px;
+	border: none;
+	width: 20%;
+	height: 30px;
+	margin-left: 30px;
+}
+hr{
+	width: 90%;
+	text-align: center;
+	margin-top: 50px;
+}
