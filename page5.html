@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery</title>
+    
+<link rel="stylesheet" type="text/css" media="screen" href="style_gal.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="stylegal.css" rel="stylesheet" type="text/css" />
+
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='main.js'></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- bootstrap -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arya:wght@400&display=swap" rel="stylesheet">
+
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  	*{
+	margin: 0;
+	padding: 0;
+	color: #f45dd6;
+	
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 5 0 0 5;
+	
+}
+.video{
+	margin-top: 25px;
+width: 450px;
+height: 260px;
+border-radius: 10px;
+box-shadow: 0px 0px 7px 5px #888888;
+}
+
+@media screen and (max-width: 600px) {
+.wrapper{
+	display: flex;
+	/*height:300px;*/
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 5 0 0 5;
+	flex-basis: 90%;
+	text-align: center;
+	align-items: center;
+}
+.video{
+	
+	margin-top: 25px;
+width: 85%;
+height: 200px;
+border-radius: 10px;
+box-shadow: 0px 0px 7px 5px #888888;
+}
+}
+
+</style>
+<body>
+    <div class="heading">
+        <h1>Welcome to Saiganga Memories</h1>
+    </div>
+<br>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" style="background-color: green; color: wheat;">Home</a>
+        <a href="gallery.html">Services</a>
+        <a href="page2.html">Showroom Opining</a> 
+        <a href="page3.html">Deliveries</a>
+        <a href="page4.html">Other Photos</a>
+        <a href="page5.html"  class="active">Videos</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div><br>
+<br>
+   <div class="subject">
+     <p class="line anim-typewriter" style="color:yellow">Videos</p>
+    </div>
+<br><br>
+
+<center>
+<!-- div 1 -->
+  <div class="wrapper">		
+  <video class="video" controls poster="video/01.jpg" data-aos="flip-up">
+    <source src="video/01.mp4" type="video/mp4"><br>
+  </video>
+  
+  <video class="video"  controls poster="video/02.jpg"  data-aos="flip-up">
+    <source src="video/02.mp4" type="video/mp4" ><br>
+  </video>
+  <video class="video" controls poster="video/03.jpg"  data-aos="flip-up">
+    <source src="video/03.mp4" type="video/mp4" ><br>
+  </video>
+  </div>
+    
+  <!-- div 2 -->
+  <div class="wrapper">		
+    <video class="video" controls poster="video/04.jpg"  data-aos="flip-up">
+      <source src="video/04.mp4" type="video/mp4"><br>
+    </video>
+    
+    <video class="video"  controls poster="video/plough.jpg"  data-aos="flip-up"> 
+      <source src="video/05.mp4" type="video/mp4" ><br>
+    </video>
+    <video class="video" controls poster="video/07.jpg"  data-aos="flip-up">
+      <source src="video/06.mp4" type="video/mp4" ><br>
+    </video>
+    </div>
+    
+    <!-- div 3 -->
+    <div class="wrapper">		
+      <video class="video" controls  data-aos="flip-up">
+        <source src="video/07.mp4" type="video/mp4"><br>
+      </video>
+      
+      <video class="video"  controls poster="video/05.jpg"  data-aos="flip-up">
+        <source src="video/08.mp4" type="video/mp4" ><br>
+      </video>
+      <video class="video" controls poster="video/cultivetor.jpg"  data-aos="flip-up">
+        <source src="video/09.mp4" type="video/mp4" ><br>
+      </video>
+      </div>
+    
+      <!-- div 4 -->
+      <div class="wrapper">		
+        <video class="video" controls poster="video/plough.jpg"  data-aos="flip-up">
+          <source src="video/10.mp4" type="video/mp4"><br>
+        </video>
+        
+        <video class="video"  controls   data-aos="flip-up">
+          <source src="video/11.mp4" type="video/mp4" ><br>
+        </video>
+        <video class="video" controls poster="video/malching.jpg"  data-aos="flip-up">
+          <source src="video/12.mp4" type="video/mp4" ><br>
+        </video>
+        </div>
+    
+        <!-- div 5 -->
+        <div class="wrapper">		
+          <video class="video" controls poster="video/rotavetor.jpg"  data-aos="flip-up">
+            <source src="video/13.mp4" type="video/mp4"><br>
+          </video>
+          
+          <video class="video"  controls poster="video/height.jpg"  data-aos="flip-up">
+            <source src="video/14.mp4" type="video/mp4" ><br>
+          </video>
+          <video class="video" controls poster="video/plough.jpg"  data-aos="flip-up">
+            <source src="video/15.mp4" type="video/mp4" ><br>
+          </video>
+          </div>
+    
+          <!-- div 6 -->
+          <div class="wrapper">		
+            <video class="video" controls  data-aos="flip-up">
+              <source src="video/16.mp4" type="video/mp4"><br>
+            </video>
+            
+            <video class="video"  controls  data-aos="flip-up">
+              <source src="video/17.mp4" type="video/mp4" ><br>
+            </video>
+            <video class="video" controls poster="video/plough.jpg"  data-aos="flip-up"> 
+              <source src="video/18.mp4" type="video/mp4" ><br>
+            </video>
+            </div>
+              
+            <!-- div 7 -->
+            <div class="wrapper">		
+              <video class="video" controls poster="video/rotavetor.jpg"   data-aos="flip-up">
+                <source src="video/19.mp4" type="video/mp4"><br>
+              </video>
+              
+              <video class="video"  controls poster="video/sarayantra.jpg"  data-aos="flip-up">
+                <source src="video/20.mp4" type="video/mp4" ><br>
+              </video>
+              <video class="video" controls poster="video/loder.jpg"  data-aos="flip-up">
+                <source src="video/21.mp4" type="video/mp4" ><br>
+              </video>
+              </div>
+                
+              <!-- div 8 -->
+              <div class="wrapper">		
+                <video class="video" controls poster="video/boom.jpg"  data-aos="flip-up">
+                  <source src="video/22.mp4" type="video/mp4"><br>
+                </video>
+                
+                <video class="video"  controls poster="video/malching.jpg"  data-aos="flip-up">
+                  <source src="video/23.mp4" type="video/mp4" ><br>
+                </video>
+                <video class="video" controls poster="video/malching.jpg"  data-aos="flip-up">
+                  <source src="video/24.mp4" type="video/mp4" ><br>
+                </video>
+                </div>
+                  
+
+<br><br>
+            <div class="footer">
+              
+              <a href="page4.html" class="next foot_page">&nbsp;Previous&nbsp; &nbsp;</a>
+              <a href="gallery.html" class="foot_page">&nbsp;1&nbsp;</a>
+              <a href="page2.html" class="foot_page">&nbsp;2&nbsp;</a>
+              <a href="page3.html" class="foot_page">&nbsp;3&nbsp;</a>
+              <a href="page4.html" class="foot_page">&nbsp;4&nbsp;</a>
+              <a href="page5.html" class="foot_page" style="color: white; background-color: black;">&nbsp;5&nbsp;</a>
+              
+            </div>
+ <br><br>
+            <div class="foot">
+             <div class="item"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+               <h2 style="background-color: yellow; color: black; font-family: 'Courgette', cursive;"><i class="fa fa-briefcase" aria-hidden="true"></i> &nbsp;Office</h2>
+               <p style="margin-top: 10px;">Old Bus Stand</p>
+               <p>Thakkar Bazzar,</p>
+               <p>Gala No.26,</p>
+               <p>Vaijapur Dist.Aurangabad</p>
+             <p>Maharashtra</p>
+             </div>
+             <div class="item" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              <h2 style="background-color: yellow; color: black; font-family: 'Courgette', cursive;"><i class="fa fa-building" aria-hidden="true"></i> &nbsp;Showroom</h2>
+              <p style="margin-top: 10px;">Subhadra Complex,</p>
+              <p>Ladgaon Road,</p>
+              <p>Vaijapur Dist.Aurangabad</p>
+              <p>423701-Maharashtra</p><br>
+             <p></p>
+             </div>
+             <div class="item"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+               <h2 style="background-color: yellow; color: black; font-family: 'Courgette', cursive;"><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp;Contact us</h2>
+               <p style="margin-top: 10px;"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;&nbsp;Own.Yogesh Karale</p>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-9158593660</p>
+               
+               <p style="margin-top: 10px;"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;&nbsp;Mech.Sachin Mhaske</p>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-9325803008</p>
+             </div>
+             
+            </div>
+            <div class="rp">
+               <p style="text-align: center; font-size: 1rem;"  data-aos="fade-down"  data-aos-duration="1500" data-aos-delay="1300"><a href="rp.html"><i>Design By : RP Technology</a></p></i>
+             </div>
+<br><br><br><br>
+
+                            <script>
+                                function myFunction() {
+                                  var x = document.getElementById("myTopnav");
+                                  if (x.className === "topnav") {
+                                    x.className += " responsive";
+                                  } else {
+                                    x.className = "topnav";
+                                  }
+                                }
+                                </script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
